@@ -1,0 +1,8 @@
+---
+- name: "Ping localhost with Ansible"
+  hosts: local
+  gather_facts: false
+
+  tasks:
+    - name: "Ping using ansible.builtin.ping"
+      ansible.builtin.ping: 
